@@ -12,3 +12,13 @@ O projeto possui:
 - **X.java**: Modelo da tabela `x`.
 - **Principal2.java**: Classe principal com menu CRUD.
 - Conexão com banco PostgreSQL usando DAO base.
+
+
+## Como usar
+
+1. Configure o banco PostgreSQL e crie a tabela `x`.  
+2. Ajuste as credenciais no DAO.java.  
+3. Compile e rode usando Maven:
+
+```bash
+mvn clean compile exec:java
