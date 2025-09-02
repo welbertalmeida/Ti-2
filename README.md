@@ -42,7 +42,11 @@ Exemplo de criação da tabela utilizada no PostgreSQL:
 
 ```sql
 CREATE TABLE X (
-    id SERIAL PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    descricao TEXT
-);
+    INSERT INTO usuario (codigo, login, senha, sexo) VALUES (3, 'maria', 'maria', 'F');
+INSERT INTO usuario (codigo, login, senha, sexo) VALUES (4, 'luciana', 'luciana', 'F');
+INSERT INTO usuario (codigo, login, senha, sexo) VALUES (5, 'juliana', 'juliana', 'F');
+INSERT INTO usuario (codigo, login, senha, sexo) VALUES (6, 'paula', 'paula', 'F');
+INSERT INTO usuario (codigo, login, senha, sexo) VALUES (7, 'carol', 'carol', 'F');
+INSERT INTO usuario (codigo, login, senha, sexo) VALUES (8, 'joao', 'joao', 'M');
+INSERT INTO usuario (codigo, login, senha, sexo) VALUES (9, 'pedro', 'pedro', 'M');
+INSERT INTO usuario (codigo, login, senha, sexo) VALUES (10, 'paulo', 'paulo', 'M');
