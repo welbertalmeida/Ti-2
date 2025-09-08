@@ -24,7 +24,7 @@ O projeto possui:
 mvn clean compile exec:java
 
 
-# Exercício 3 — Integração Spark (Java + Maven + PostgreSQL)
+### Exercício 3 — Integração Spark (Java + Maven + PostgreSQL)
 
 Este repositório contém um **CRUD de Produto** implementado em **Java** usando **Spark Framework**, **Maven** e **PostgreSQL**, com **formulário HTML** para leitura e envio dos dados, conforme o enunciado do Exercício 3.
 
