@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Pessoas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>CRUD de Pessoas</h1>
+    </header>
+    <main>
+        <section class="form-section" id="insert-section">
+            <h2>Inserir Pessoa</h2>
+            <form action="/people/insert" method="post">
+                <label for="code">Código:</label>
+                <input type="text" id="code" name="codigo" required>
+
+                <label for="job">Trabalho:</label>
+                <input type="text" id="job" name="trabalho" required>
+
+                <label for="age">Idade:</label>
+                <input type="number" id="age" name="idade" required>
+
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="nome" required>
+
+                <button type="submit">Inserir</button>
+            </form>
+        </section>
+
+        <section class="form-section" id="detail-section">
+            <h2>Detalhar Pessoa</h2>
+            <form action="/people" method="get">
+                <label for="detailId">ID:</label>
+                <input type="text" id="detailId" name="id" required>
+
+                <button type="submit">Detalhar</button>
+            </form>
+        </section>
+
+        <section class="form-section" id="update-section">
+            <h2>Atualizar Pessoa</h2>
+            <form action="/people/update" method="post">
+                <label for="updateId">ID:</label>
+                <input type="text" id="updateId" name="id" required>
+
+                <label for="updateJob">Novo Trabalho:</label>
+                <input type="text" id="updateJob" name="trabalho">
+
+                <label for="updateAge">Nova Idade:</label>
+                <input type="number" id="updateAge" name="idade">
+
+                <label for="updateName">Novo Nome:</label>
+                <input type="text" id="updateName" name="nome">
+
+                <button type="submit">Atualizar</button>
+            </form>
+        </section>
+
+        <section class="form-section" id="remove-section">
+            <h2>Remover Pessoa</h2>
+            <form action="/people/delete" method="post">
+                <label for="removeId">ID:</label>
+                <input type="text" id="removeId" name="id" required>
+
+                <button type="submit">Remover</button>
+            </form>
+        </section>
+
+        <section class="form-section" id="list-section">
+            <h2>Listar Pessoas</h2>
+            <button id="listAll" onclick="window.location.href='/people/list/4'">Todos</button>
+            <ul id="personList"></ul>
+        </section>
+    </main>
+</div>
+</body>
+</html>
