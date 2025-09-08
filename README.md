@@ -307,29 +307,9 @@ export DB_NAME=loja
 export DB_USER=loja_user
 export DB_PASS=loja_pass
 export APP_PORT=4567
-```
 
 ---
 
-## 📤 Publicar no GitHub (resumo)
 
-```bash
-git init
-git add .
-git commit -m "Exercício 3: CRUD Produto com Spark/Java/PostgreSQL"
-git branch -M main
-git remote add origin https://github.com/<seu-usuario>/<seu-repo>.git
-git push -u origin main
-```
 
----
 
-## 📄 Licença
-
-Defina uma licença (por exemplo, MIT) conforme a necessidade do seu projeto.
-
----
-
-## ✍️ Autoavaliação (exemplo de texto curto)
-
-> **Autoavaliação:** Implementado CRUD completo com formulário HTML, integração JDBC com PostgreSQL, rotas Spark e testes via curl. README documenta execução e dependências. Próximos passos: melhorar validação e adicionar testes automatizados.
