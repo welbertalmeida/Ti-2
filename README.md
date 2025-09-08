@@ -1,14 +1,12 @@
-Beleza, Welbert! Vou organizar esse material em um **README** mais limpinho, unindo os dois exercícios (o simples no Eclipse para somar dois números e o CRUD com PostgreSQL/Spark). Assim você pode colar direto no repositório do GitHub sem ficar bagunçado.
 
-Aqui vai a versão editada:
 
----
+# 🚀 Projetos Ti 2 — Exercícios
 
-# 🚀 Projetos Java — Exercícios
-
-Este repositório contém **dois exercícios** em Java desenvolvidos em aula:
+Este repositório contém **três exercícios** em Java desenvolvidos em ti 2:
+## 📘 Exercício 1 — CPostgreSQL (Eclipse)
 
 ---
+Somar dois numero no eclipse
 
 ## 📘 Exercício 2 — CRUD Java + PostgreSQL (Eclipse)
 
