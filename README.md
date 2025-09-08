@@ -296,19 +296,6 @@ curl -X DELETE http://localhost:4567/api/produtos/1
 
 ---
 
-## 🔐 Variáveis de ambiente (opcional)
-
-Em vez de `application.properties`, você pode usar variáveis:
-
-```
-export DB_HOST=localhost
-export DB_PORT=5432
-export DB_NAME=loja
-export DB_USER=loja_user
-export DB_PASS=loja_pass
-export APP_PORT=4567
-
----
 
 
 
