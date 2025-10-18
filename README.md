@@ -129,6 +129,66 @@ java -jar target/seu-projeto-1.0-SNAPSHOT-shaded.jar
 
 Acesse [http://localhost:4567](http://localhost:4567)
 
+
+# 💡 Exercício 4 – Computação em Nuvem e Serviços Cognitivos  
+## 🔹 Azure AI Custom Vision – Extração de Texto de Imagens
+
+### 🎯 Objetivo
+Este exercício tem como finalidade demonstrar o uso de **serviços cognitivos da Microsoft Azure**, especificamente o **Azure AI Vision Studio (Custom Vision)**, para **extração automática de texto (OCR)** a partir de uma imagem.
+
+O objetivo é compreender como a nuvem pode ser utilizada para processar dados visuais e transformá-los em informações estruturadas, permitindo integração com aplicações em diversas linguagens, como **Java**.
+
+---
+
+### 🧠 Funcionalidade Utilizada
+**Serviço:** Azure AI Vision Studio  
+**Recurso:** Extract text from images (OCR)  
+**Categoria:** Cognitive Services → Computer Vision  
+
+Este serviço é capaz de:
+- Detectar texto em imagens (documentos, recibos, extratos, etc.);
+- Retornar o texto reconhecido com suas posições (coordenadas);
+- Gerar saída estruturada em formato **JSON**.
+
+---
+
+### 🧩 Etapas Realizadas
+
+1. **Ativação da Conta no Azure**  
+   - Criação e login na plataforma Azure.  
+   - Acesso ao portal [https://portal.vision.cognitive.azure.com](https://portal.vision.cognitive.azure.com).
+
+2. **Acesso ao Vision Studio**  
+   - Seção: **Vision Studio → Extract text from images**.  
+   - Upload da imagem contendo um **extrato bancário simulado**.
+
+3. **Processamento da Imagem**  
+   - O serviço identificou e extraiu automaticamente os textos da imagem.  
+   - Os dados foram apresentados em duas áreas:
+     - 🖼️ **Imagem original** (com regiões delimitadas);
+     - 💻 **Saída JSON** (com texto detectado e coordenadas).
+
+4. **Visualização do Resultado**  
+   A imagem a seguir mostra o funcionamento prático do OCR no Azure Vision Studio:
+
+   ![Extração de Texto com Azure Vision](101ff4b4-4589-441b-95c3-bafa373e36fa.png)
+
+---
+
+### 🧾 Exemplo de Saída JSON
+
+```json
+{
+  "text": "Agência/Conta: xxxxx /xxxxx-x",
+  "boundingPolygon": [
+    {"x": 219, "y": 2},
+    {"x": 409, "y": 2},
+    {"x": 409, "y": 16},
+    {"x": 219, "y": 15}
+  ]
+}
+
+
 ---
 
 ## ✅ Entrega
